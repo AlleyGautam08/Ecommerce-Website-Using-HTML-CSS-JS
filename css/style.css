@@ -124,11 +124,11 @@ button.white {
      width: 100%;
      background-size: cover;
      background-position: top 35% right 0;
-     padding: 0 80px ;
+     padding: 50px ;
      display: flex;
      flex-direction: column;
      align-items: flex-start;
-     justify-content: center;
+     justify-content: flex-end;
 }
 #hero h4{
      padding: 15px;
@@ -202,16 +202,18 @@ button.white {
 
 #product1{
      text-align: center;
+     padding: 25px;
 }
 #product1 .pro-container{
      display: flex;
-     justify-content: space-between;
-     padding-top:20px  ;
+     justify-content: space-around;
+     
+     padding-top:5px  ;
      flex-wrap: wrap;
 }
 #product1 .pro{
      width: 23%;
-     min-width: 250px;
+     min-width: 330px;
      padding: 10px 12px ;
      border: 1px solid #cce7d0;
      border-radius: 25px;
@@ -302,13 +304,15 @@ button.white {
      flex-direction: column;
      justify-content: center;
      align-items: flex-start;
-     
      background-image: url("/img/banner/b17.jpg");
-     min-width: 650px;
-     height: 50vh;
+  width: 100%;
+     max-width: 600px;
+     height: 40vh;
      background-size: cover;
      background-position: center;
-     padding: 30px ;
+     padding: 20px ;
+     margin: 5px;
+
 }
 #sm-banner .banner-box2{
      background-image: url("/img/banner/b10.jpg");
@@ -335,23 +339,26 @@ button.white {
 }
 #banner3 {
      display: flex;
-     justify-content: space-between;
+     justify-content:space-between ;
+       align-items: center;
      flex-wrap: wrap;
-     padding: 0 80px;
+     padding:  0px;
 }
 #banner3 .banner-box{
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: flex-start;
-     
+     align-items: center;
      background-image: url("/img/banner/b7.jpg");
-     min-width: 30%;
-     height: 30vh;
+     /* min-width: 330px; */
+     width: 100%;
+     max-width: 400px;
+     height: 40vh;
      background-size: cover;
+     background-repeat: no-repeat;
      background-position: center;
-     padding: 20px ;
-     margin-bottom: 20px;
+     padding: 10px ;
+     margin: 10px;
 }
 #banner3 h2{
      color: #fff;
@@ -371,12 +378,14 @@ button.white {
 }
 #newsletters{
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
      flex-wrap: wrap;
+     height: 300px;
      align-items: center;
      background-image: url("/img/banner/b14.png");
      background-repeat: no-repeat;
      background-position: 20%  30%;
+     padding: 20px;
      background-color: #041e42;
 }
 #newsletters h3{
@@ -386,9 +395,9 @@ button.white {
 
 }
 #newsletters p{
-     font-size: 15px;
+     font-size: 25px;
      font-weight: 700;
-     color: #073e8a;
+     color: #3b85ec;
 
 }
 #newsletters p span{
@@ -397,7 +406,8 @@ button.white {
 }
 #newsletters .form{
      display: flex;
-     width: 40%;
+     width:100%;
+     max-width:900px ;
 }
 #newsletters input{
      height: 3.125rem;
@@ -421,6 +431,7 @@ footer {
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
+     padding: 30px;
 
 }
 footer .col {
@@ -476,6 +487,7 @@ footer a:hover{
      background-image: url("/img/banner/b1.jpg");
      width: 100%;
      height: 40vh;
+     margin-bottom: 50px;
      background-size: cover;
      display: flex;
      justify-content: center;
@@ -483,13 +495,14 @@ footer a:hover{
      flex-direction: column;
      padding: 14px;
 }
-#page-header h2, 
+#page-header h2,
 #page-header p{
      color: #fff;
      
 }
 #pagination{
      text-align: center;
+     margin: 30px;
 }
 #pagination a{
      text-decoration: none;
@@ -557,7 +570,8 @@ footer a:hover{
      background-image: url("/img/banner/b19.jpg");
 }
 #blog{
-     padding: 150px 150px 0 150px;
+     padding: 10px;
+     margin: 10px;
 
 }
 #blog .blog-box{
@@ -620,6 +634,7 @@ footer a:hover{
 }
 #about-head{
      display: flex;
+     padding: 30px;
      align-items: center;
 }
 #about-head img{
@@ -828,7 +843,7 @@ footer a:hover{
 /* media quaries */
 @media (max-width:799px) {
      .section-p1{
-          padding: 40px 40px;
+          padding: 0px 0px;
      }
      #navbar {
           display: flex;
@@ -871,14 +886,14 @@ footer a:hover{
      }
      #hero{
           height: 70vh;
-          padding: 0 80px;
+          padding: 20px;
           background-position: top 30% right 30%;
      }
      #feature{
           justify-content: center;
      }
      #feature .fe-box{
-          margin: 15px 15px ;
+          margin: 10px;
      }
      #prodetails{
           display: flex;
